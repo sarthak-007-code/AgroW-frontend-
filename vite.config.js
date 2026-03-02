@@ -9,7 +9,8 @@ export default defineConfig({
             'ag-agrow.trycloudflare.com',
             'tayna-feirie-xuan.ngrok-free.dev',
             'portfolio-favorites-holder-wrote.trycloudflare.com',
-            'critics-weekly-depends-qualifications.trycloudflare.com/'
+            'critics-weekly-depends-qualifications.trycloudflare.com/',
+            'agro-w-frontend-git-main-waralesarthak000-3705s-projects.vercel.app'
         ],
         proxy: {
             '/api': {
