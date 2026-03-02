@@ -1,0 +1,312 @@
+{
+    // Connection Done
+    "createFarmer": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/farmer/create",
+        "description": "Create a new farmer profile.",
+        "requestBody": {
+            "userId": "string",
+            "firstName": "string",
+            "lastName": "string",
+            "email": "string",
+            "gender": "string",
+            "state": "string",
+            "district": "string",
+            "village": "string",
+            "cropList": "[string]",
+            "interestedList": "[string]",
+            "joinedCommunities": "[string]"
+        },
+        "response": {
+            "status": "User Registered"
+        }
+    },
+    "getFarmer": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/farmer/get/:userId",
+        "description": "Retrieve a farmer profile by user ID.",
+        "requestParams": {
+            "email": "string"
+        },
+        "response": {
+            "status": "success",
+            "data": {
+                "firstName": "string",
+                "lastName": "string",
+                "email": "string",
+                "gender": "string",
+                "state": "string",
+                "district": "string",
+                "village": "string",
+                "cropList": "[string]",
+                "interestedList": "[string]",
+                "joinedCommunities": "[string]"
+            }
+        }
+    },
+    // Connection Done have to add verf ide
+    "createServiceProvider": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/serviceProvider/create",
+        "description": "Create a new service provider profile.",
+        "requestBody": {
+            "userId": "string",
+            "firstName": "string",
+            "lastName": "string",
+            "email": "string",
+            "gender": "string",
+            "state": "string",
+            "district": "string",
+            "village": "string",
+            "serviceList": "[string]",
+            "interestedList": "[string]",
+            "joinedCommunities": "[string]"
+        },
+        "response": {
+            "status": "User Registered"
+        }
+    },
+    "getServiceProvider": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/serviceProvider/get/:userId",
+        "description": "Retrieve a farmer profile by user ID.",
+        "requestParams": {
+            "email": "string"
+        },
+        "response": {
+            "status": "success",
+            "data": {
+                "firstName": "string",
+                "lastName": "string",
+                "email": "string",
+                "gender": "string",
+                "state": "string",
+                "district": "string",
+                "village": "string",
+                "serviceList": "[string]",
+                "interestedList": "[string]",
+                "joinedCommunities": "[string]"
+            }
+        }
+    },
+    "createCommunity": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/createCommunity/",
+        "description": "Create a new community.",
+        "requestBody": {
+            "communityName": "string",
+            "membersId": "[string]",
+            "content": "[string]",
+            "state": "string",
+            "district": "string",
+            "village": "string",
+            "communitySearchTagList": "[string]",
+            "communityCreatedOn": "string"
+        },
+        "response": {
+            "status": "Community Created"
+        }
+    },
+    "addMemberToCommunity": {
+        "method": "PUT",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/community/addMember/:id",
+        "description": "Add a member to an existing community.",
+        "requestParams": {
+            "userId": "string"
+        },
+        "requestBody": {
+            "communityId": "string",
+            "role": "string"
+        },
+        "response": {
+            "status": "Member Added"
+        }
+    },
+    "removeMemberFromCommunity": {
+        "method": "DELETE",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/community/removeMember/:id",
+        "description": "Remove a member from an existing community.",
+        "requestParams": {
+            "userId": "string"
+        },
+        "requestBody": {
+            "communityId": "string",
+            "role": "string"
+        },
+        "response": {
+            "status": "member removed"
+        }
+    },
+    "getAllCommunities": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/dashboard/allCommunity/",
+        "description": "Retrieve a list of all communities.",
+        "response": {
+            "status": "success",
+            "data": [
+                {
+                    "communityId": "string",
+                    "communityName": "string",
+                    "membersId": "[string]",
+                    "content": "[string]",
+                    "state": "string",
+                    "district": "string",
+                    "village": "string",
+                    "communitySearchTagList": "[string]",
+                    "communityCreatedOn": "string"
+                }
+            ]
+        }
+    },
+    "searchCommunities": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/dashboard/searchCommunity/?searchTerm=string",
+        "description": "Search for communities based on a search term.",
+        "queryParams": {
+            "searchTerm": "string"
+        },
+        "response": {
+            "status": "success",
+            "data": {
+                "communityId": "string",
+                "communityName": "string",
+                "membersId": "[string]",
+                "content": "[string]",
+                "state": "string",
+                "district": "string",
+                "village": "string",
+                "communitySearchTagList": "[string]",
+                "communityCreatedOn": "string"
+            }
+        }
+    },
+    "getUserCommunities": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/dashboard/getUserCommunity/:userId",
+        "description": "Retrieve a list of communities that a user is a member of.",
+        "requestParams": {
+            "userId": "string"
+        },
+        "requestBody": {
+            "role": "string"
+        },
+        "response": {
+            "status": "success",
+            "data": {
+                "communityId": "string",
+                "communityName": "string",
+                "membersId": "[string]",
+                "content": "[string]",
+                "state": "string",
+                "district": "string",
+                "village": "string",
+                "communitySearchTagList": "[string]",
+                "communityCreatedOn": "string"
+            }
+        }
+    },
+    "createContnet": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/create",
+        "description": "Create a new content post in a community.",
+        "requestBody": {
+            "communityId": "string",
+            "createrId": "string", // give the userId of the creator of the content
+            "text": "string",
+            "media": "[string]",
+            "CreatedAt": "string"
+        },
+        "response": {
+            "message": "Content created successfully."
+        }
+    },
+    "getCommunityContent": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/getCommunityContent/:communityId",
+        "description": "Retrieve all content posts for a specific community.",
+        "response": {
+            "message": "Content fetched successfully",
+            "contents": [
+                {
+                    "_id": "string",
+                    "communityId": "string",
+                    "creatorId": "string",
+                    "text": "String",
+                    "media": [
+                        "string"
+                    ],
+                    "createdAt": "2026-02-22T14:00:00.000Z",
+                    "__v": 0
+                }
+            ]
+        }
+    },
+    "deleteCommunityContent": {
+        "method": "DELETE",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/deleteContent",
+        "description": "Delete a content post from a community.",
+        "requestBody": {
+            "contentId": "string"
+        },
+        "response": {
+            "message": "Content deleted successfully."
+        }
+    },
+    "likeContent": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/likeContent",
+        "description": "Like a content post in a community.",
+        "requestBody": {
+            "contentId": "string",
+            "userId": "string"
+        },
+        "response": {
+            "message": "Content liked successfully."
+        }
+    },
+    "commentContent": {
+        "method": "POST",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/commentContent",
+        "description": "Comment on a content post in a community.",
+        "requestBody": {
+            "communityId": "string",
+            "contentId": "string",
+            "creatorId": "string",
+            "commentText": "string",
+            "createdAt": "string"
+        },
+        "response": {
+            "message": "Comment added successfully."
+        }
+    },
+    "deleteComment": {
+        "method": "DELETE",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/deleteComment",
+        "description": "Delete a comment from a content post in a community.",
+        "requestBody": {
+            "commentId": "string"
+        },
+        "response": {
+            "message": "Comment deleted successfully."
+        }
+    },
+    "getContentComments": {
+        "method": "GET",
+        "endpoint": "https://braided-constrained-maximilian.ngrok-free.dev/api/content/getContentComments/:contentId",
+        "description": "Retrieve all comments for a specific content post.",
+        "response": {
+            "message": "Comments fetched successfully",
+            "comments": [
+                {
+                    "_id": "string",
+                    "communityId": "string",
+                    "contentId": "string",
+                    "creatorId": "string",
+                    "commentText": "String",
+                    "createdAt": "2026-02-22T14:00:00.000Z",
+                    "__v": 0
+                }
+            ]
+        }
+    }
+}

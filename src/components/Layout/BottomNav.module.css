@@ -1,0 +1,105 @@
+/* Only visible on mobile */
+.bottomNav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bottomNav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: var(--color-surface, #ffffff);
+        border-top: 1px solid var(--color-border, #e5e7eb);
+        box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+        align-items: center;
+        justify-content: space-around;
+        z-index: 100;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    .navItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        flex: 1;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px 0;
+        color: #9ca3af;
+        transition: color 0.25s ease, transform 0.2s ease;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+
+    .navItem::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        width: 32px;
+        height: 3px;
+        border-radius: 0 0 4px 4px;
+        background: #2E7D32;
+        transition: transform 0.25s ease;
+    }
+
+    .navItem.active {
+        color: #2E7D32;
+    }
+
+    .navItem.active::before {
+        transform: translateX(-50%) scaleX(1);
+    }
+
+    .navItem:active {
+        transform: scale(0.92);
+    }
+
+    .navLabel {
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1;
+        margin-top: 1px;
+    }
+
+    /* Center Create Button */
+    .centerBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .centerBtnCircle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #43A047 0%, #66BB6A 100%);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(67, 160, 71, 0.3);
+        margin-top: -8px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .centerBtn:active .centerBtnCircle {
+        transform: scale(0.9);
+        box-shadow: 0 1px 4px rgba(67, 160, 71, 0.2);
+    }
+}

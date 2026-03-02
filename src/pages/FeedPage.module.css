@@ -1,0 +1,341 @@
+.feedContainer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Create Post Widget */
+.createPostWidget {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cpHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #E0E0E0;
+    overflow: hidden;
+}
+
+.userAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cpInput {
+    flex: 1;
+    background: var(--color-bg);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.cpInput:focus {
+    outline: none;
+    background: var(--color-surface);
+    border-color: #D1D5DB;
+}
+
+.cpActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid #F3F4F6;
+}
+
+.cpTools {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toolBtn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolBtn:hover {
+    background: var(--color-bg);
+    color: #2E7D32;
+}
+
+.voiceBtn {
+    color: #E53935;
+    /* Red for recording/voice */
+}
+
+.postBtn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.postBtn:hover {
+    background: #1B5E20;
+}
+
+.postBtn:disabled {
+    background: #A5D6A7;
+    cursor: not-allowed;
+}
+
+/* Filter Bar */
+.filterBar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.filterChip {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.filterChip:hover {
+    background: var(--color-bg);
+    border-color: #D1D5DB;
+}
+
+.activeFilter {
+    background: #E8F5E9;
+    color: #1B5E20;
+    border-color: #2E7D32;
+}
+
+/* Posts */
+.postCard {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.2s;
+}
+
+.postCard:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-color: #D1D5DB;
+}
+
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.userInfo {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+}
+
+.postMeta {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+}
+
+.joinBtn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.postContent h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.postBody {
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+}
+
+.postImage {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+/* Tags */
+.tagContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.knowledgeTag {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+.showcaseTag {
+    background: #F3E5F5;
+    color: #7B1FA2;
+}
+
+.doubtTag {
+    background: #FFEBEE;
+    color: #C62828;
+}
+
+/* Actions */
+.postActions {
+    display: flex;
+    gap: 1.5rem;
+    border-top: 1px solid #F3F4F6;
+    padding-top: 0.75rem;
+}
+
+.actionBtn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.actionBtn:hover {
+    background: var(--color-bg);
+    color: #374151;
+}
+
+.upvoted {
+    color: #EF6C00;
+    /* Orange for upvote */
+}
+
+@keyframes leafFill {
+    0% {
+        clip-path: inset(100% 0 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.energyLeafContainer {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.energyLeafBg {
+    color: #E5E7EB;
+}
+
+.energyLeafFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #22C55E;
+    fill: #4ADE80;
+    animation: leafFill 1.5s ease-in-out infinite alternate;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .createPostWidget {
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+
+    .cpHeader {
+        gap: 0.5rem;
+    }
+
+    .cpInput {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .postCard {
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+
+    .postActions {
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .actionBtn {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.4rem;
+    }
+}

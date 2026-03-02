@@ -1,0 +1,308 @@
+.schemesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.header {
+    background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.headerContent {
+    max-width: 800px;
+}
+
+.titleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.headerIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.searchBar {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-secondary);
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 2.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 99px;
+    font-size: 0.95rem;
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+    transition: all 0.2s;
+}
+
+.searchBar input::placeholder {
+    color: var(--color-text-secondary);
+}
+
+.searchBar input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.categoryFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.categoryBtn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: capitalize;
+}
+
+.categoryBtn:hover {
+    background: var(--color-bg);
+    border-color: var(--color-text-secondary);
+}
+
+.activeCategory {
+    background: var(--color-primary, #2E7D32);
+    color: white;
+    border-color: var(--color-primary, #2E7D32);
+}
+
+.activeCategory:hover {
+    background: var(--color-primary-dark, #1B5E20);
+    border-color: var(--color-primary-dark, #1B5E20);
+}
+
+.schemesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+}
+
+.schemeCard {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.schemeCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-text-secondary);
+}
+
+.schemeCard.expanded {
+    border-color: var(--color-primary, #2E7D32);
+}
+
+.cardHeader {
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--color-primary-bg, #E8F5E9);
+    color: var(--color-primary, #2E7D32);
+    margin-right: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.levelBadge {
+    background: rgba(21, 101, 192, 0.12);
+    color: #42A5F5;
+}
+
+.cardHeader h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+    line-height: 1.3;
+}
+
+.cardBody {
+    padding: 0 1.5rem 1.5rem;
+    flex-grow: 1;
+}
+
+.benefitBox {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.benefitBox strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.benefitBox p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    line-height: 1.5;
+}
+
+.demographicText {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.cardExpandedContent {
+    padding: 1.5rem;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+}
+
+.expandedSection {
+    margin-bottom: 1.5rem;
+}
+
+.expandedSection:last-child {
+    margin-bottom: 0;
+}
+
+.expandedSection h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.expandedSection p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.expandBtn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-surface);
+    border: none;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-primary, #2E7D32);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.expandBtn:hover {
+    background: var(--color-bg);
+}
+
+.noResults {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--color-surface);
+    border-radius: 12px;
+    border: 1px dashed var(--color-border);
+}
+
+.noResults p {
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.noResults button {
+    padding: 0.6rem 1.5rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 99px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.noResults button:hover {
+    background: var(--color-bg);
+    border-color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .schemesContainer {
+        padding: 1rem;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .schemesGrid {
+        grid-template-columns: 1fr;
+    }
+}

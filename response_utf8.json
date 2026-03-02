@@ -1,0 +1,499 @@
+﻿{
+    "status":  "Success",
+    "data":  [
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c3d",
+                     "communityName":  "Pusad Cotton Growers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Maharashtra",
+                     "district":  "Yavatmal",
+                     "village":  "Pusad",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Cotton",
+                                                        "Kharif",
+                                                        "PestControl"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260221",
+                     "content":  [
+                                     {
+                                         "contentCreatedOnAt":  "2026-02-22T09:35:59.929Z",
+                                         "_id":  "699acdffd6cb3febbbcabd87"
+                                     },
+                                     {
+                                         "contentCreatedOnAt":  "2026-02-22T09:52:35.529Z",
+                                         "_id":  "699ad1e38878104dc4576a9a"
+                                     },
+                                     {
+                                         "contentCreatedOnAt":  "2026-02-22T09:53:24.867Z",
+                                         "_id":  "699ad2148878104dc4576aa6"
+                                     }
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c3e",
+                     "communityName":  "Vidarbha Soybean Farmers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Maharashtra",
+                     "district":  "Akola",
+                     "village":  "Balapur",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Soybean",
+                                                        "Organic",
+                                                        "Fertilizer"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260115",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c3f",
+                     "communityName":  "Marathwada Tur Dal Group",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Maharashtra",
+                     "district":  "Latur",
+                     "village":  "Ausa",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Tur",
+                                                        "Rabi",
+                                                        "MarketRates"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260120",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c40",
+                     "communityName":  "Punjab Wheat Experts",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Punjab",
+                     "district":  "Ludhiana",
+                     "village":  "Khanna",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Wheat",
+                                                        "Irrigation",
+                                                        "Seeds"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251205",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c41",
+                     "communityName":  "Sugarcane Progressive Farmers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Uttar Pradesh",
+                     "district":  "Meerut",
+                     "village":  "Sardhana",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Sugarcane",
+                                                        "DripIrrigation",
+                                                        "FarmingTech"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251130",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c42",
+                     "communityName":  "Organic Vegetable Growers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Karnataka",
+                     "district":  "Belagavi",
+                     "village":  "Gokak",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Vegetables",
+                                                        "Organic",
+                                                        "Compost"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260201",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c43",
+                     "communityName":  "Tomato Farmers Collective",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Andhra Pradesh",
+                     "district":  "Chittoor",
+                     "village":  "Madanapalle",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Tomato",
+                                                        "Polyhouse",
+                                                        "DiseaseControl"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260128",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c44",
+                     "communityName":  "Rice Cultivation Forum",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "West Bengal",
+                     "district":  "Hooghly",
+                     "village":  "Chandannagar",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Paddy",
+                                                        "WaterManagement",
+                                                        "Nursery"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251112",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c45",
+                     "communityName":  "Millet Revolution Group",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Karnataka",
+                     "district":  "Raichur",
+                     "village":  "Sindhanur",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Millets",
+                                                        "ClimateSmart",
+                                                        "Nutrition"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260205",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c46",
+                     "communityName":  "Grapes Export Farmers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Maharashtra",
+                     "district":  "Nashik",
+                     "village":  "Niphad",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Grapes",
+                                                        "Export",
+                                                        "ResidueFree"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251222",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c47",
+                     "communityName":  "Banana Growers Network",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Tamil Nadu",
+                     "district":  "Trichy",
+                     "village":  "Musiri",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Banana",
+                                                        "TissueCulture",
+                                                        "Fertilizer"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260109",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c48",
+                     "communityName":  "Onion Storage Farmers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Maharashtra",
+                     "district":  "Ahmednagar",
+                     "village":  "Rahuri",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Onion",
+                                                        "Storage",
+                                                        "PriceAlert"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260210",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c49",
+                     "communityName":  "Groundnut Farming Circle",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Gujarat",
+                     "district":  "Junagadh",
+                     "village":  "Manavadar",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Groundnut",
+                                                        "SoilHealth",
+                                                        "Yield"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260103",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4a",
+                     "communityName":  "Horticulture Innovators",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Himachal Pradesh",
+                     "district":  "Shimla",
+                     "village":  "Theog",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Apple",
+                                                        "Pruning",
+                                                        "ColdClimate"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251018",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4b",
+                     "communityName":  "Spice Farmers Hub",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Kerala",
+                     "district":  "Idukki",
+                     "village":  "Kumily",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Pepper",
+                                                        "Cardamom",
+                                                        "Organic"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251125",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4c",
+                     "communityName":  "Drip Irrigation Users",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Rajasthan",
+                     "district":  "Jaipur",
+                     "village":  "Chomu",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "WaterSaving",
+                                                        "Drip",
+                                                        "Subsidy"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260211",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4d",
+                     "communityName":  "Beekeeping \u0026 Pollination Group",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Haryana",
+                     "district":  "Karnal",
+                     "village":  "Nilokheri",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Beekeeping",
+                                                        "Honey",
+                                                        "Pollination"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260117",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4e",
+                     "communityName":  "Mango Orchard Farmers",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Uttar Pradesh",
+                     "district":  "Malihabad",
+                     "village":  "Kakori",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Mango",
+                                                        "Orchard",
+                                                        "Pruning"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20251215",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c4f",
+                     "communityName":  "Agri Machinery Sharing Group",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Madhya Pradesh",
+                     "district":  "Indore",
+                     "village":  "Sanwer",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Tractor",
+                                                        "Implements",
+                                                        "Rental"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260202",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "6999b823f6b0b991a4dd6c50",
+                     "communityName":  "Climate Smart Farming India",
+                     "membersId":  [
+
+                                   ],
+                     "state":  "Telangana",
+                     "district":  "Warangal",
+                     "village":  "Parkal",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Weather",
+                                                        "Advisory",
+                                                        "CropPlanning"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "20260218",
+                     "content":  [
+
+                                 ],
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "699aec8aeb48d90ea3d2dda0",
+                     "communityName":  "Hitman-Guide",
+                     "membersId":  [
+                                       "user_3A1VrmxaFY2yGDrQq3nVAh5blfE"
+                                   ],
+                     "content":  [
+
+                                 ],
+                     "state":  "Bihar",
+                     "district":  "Chhpra",
+                     "village":  "Khatra Mahal",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "HowToKill",
+                                                        "EarnMoneyByKilling",
+                                                        "KillIsFun"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "2026-02-22T11:45:09.700Z",
+                     "__v":  0
+                 },
+                 {
+                     "_id":  "699af503eb48d90ea3d2dda4",
+                     "communityName":  "Weeb Farming Community",
+                     "membersId":  [
+                                       "user_3A1aGA4wmmAlNVHMO0Lbrq1CfVx"
+                                   ],
+                     "content":  [
+
+                                 ],
+                     "state":  "Uttar Pradesh",
+                     "district":  "Mirzapur",
+                     "village":  "Ram Nagar",
+                     "communitySearchTagList":  [
+                                                    [
+                                                        "Weed",
+                                                        "Illegal"
+                                                    ]
+                                                ],
+                     "communityCreatedOn":  "2026-02-22T12:22:27.071Z",
+                     "__v":  0
+                 }
+             ]
+}

@@ -1,0 +1,225 @@
+.createPostPage {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.drafts {
+    color: #0079D3;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.draftBadge {
+    background: var(--color-border);
+    color: var(--color-text-secondary);
+    padding: 0.1rem 0.4rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #EDEFF1;
+    margin-bottom: 1.5rem;
+}
+
+.communitySelector {
+    margin-bottom: 1.5rem;
+}
+
+.selectorBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-surface);
+    border: 1px solid #EDEFF1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.selectorBtn:hover {
+    border-color: #D1D5DB;
+}
+
+.postCard {
+    background: var(--color-surface);
+    border-radius: 5px;
+    border: 1px solid #EDEFF1;
+    overflow: hidden;
+}
+
+.postForm {
+    padding: 1.5rem;
+    background: var(--color-surface);
+}
+
+.titleWrapper {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.titleInput {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #EDEFF1;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    background: var(--color-surface);
+    padding-right: 4rem;
+}
+
+.titleInput:focus {
+    outline: none;
+    border-color: #2E7D32;
+}
+
+.charCount {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: #878A8C;
+    font-weight: 600;
+}
+
+.addTagsBtn {
+    background: #EDEFF1;
+    border: none;
+    color: #878A8C;
+    padding: 0.4rem 0.75rem;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.editorWrapper {
+    background: var(--color-surface);
+    border: 1px solid #EDEFF1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.bodyInput {
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem;
+    border: none;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.bodyInput:focus {
+    outline: none;
+    border-color: #2E7D32;
+}
+
+.mediaUploadWrapper {
+    margin-bottom: 1rem;
+}
+
+.uploadBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    border: 2px dashed #D1D5DB;
+    border-radius: 8px;
+    background: #F9FAFB;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.uploadBox:hover {
+    border-color: #2E7D32;
+    background: #F0FAF0;
+}
+
+.hiddenFileInput {
+    display: none;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.saveDraftBtn {
+    background: none;
+    border: none;
+    color: #0079D3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submitBtn {
+    background: #2E7D32;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 99px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: #1B5E20;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .createPostPage {
+        padding: 1rem 0.5rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .postForm {
+        padding: 0.75rem;
+    }
+}

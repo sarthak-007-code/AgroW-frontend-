@@ -1,0 +1,340 @@
+.topBar {
+    height: 64px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    color: #1B5E20;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.searchContainer {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    background: var(--color-bg);
+    border: 1px solid transparent;
+    padding: 0.6rem 1rem 0.6rem 2.5rem;
+    border-radius: 99px;
+    font-size: 0.95rem;
+    color: var(--color-text-primary);
+    transition: all 0.2s;
+}
+
+.searchInput:focus {
+    outline: none;
+    background: var(--color-surface);
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBtn:hover {
+    background: var(--color-bg);
+    color: var(--color-text-primary);
+}
+
+.profileBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    border-radius: 99px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.profileBtn:hover {
+    border-color: #D1D5DB;
+    background: var(--color-bg);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background: #2E7D32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.username {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+    margin-right: 0.25rem;
+}
+
+.createPostBtn {
+    display: none;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem 0.45rem 0.75rem;
+    border-radius: 8px;
+    background: #2E7D32;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.88rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(46, 125, 50, 0.25);
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.createPostBtn:hover {
+    background: #256b29;
+    box-shadow: 0 3px 10px rgba(46, 125, 50, 0.35);
+    transform: scale(1.03);
+}
+
+.createPostBtn:active {
+    transform: scale(0.98);
+}
+
+@media (min-width: 1024px) {
+    .createPostBtn {
+        display: flex;
+    }
+}
+
+.profileContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    width: 220px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 0.5rem 0;
+    z-index: 100;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: #374151;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+    background: var(--color-bg);
+}
+
+.dropdownItem svg {
+    color: var(--color-text-secondary);
+}
+
+.dropdownDivider {
+    height: 1px;
+    background: var(--color-border);
+    margin: 0.25rem 0;
+}
+
+/* Google Translate Custom Dropdown */
+.translateWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 99px;
+    padding: 0.3rem 0.6rem 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.translateWrapper:hover {
+    border-color: #2E7D32;
+    background: rgba(46, 125, 50, 0.06);
+    box-shadow: 0 1px 4px rgba(46, 125, 50, 0.1);
+}
+
+.translateIcon {
+    color: #2E7D32;
+    flex-shrink: 0;
+}
+
+.langSelect {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    outline: none;
+    appearance: auto;
+    font-family: inherit;
+    max-width: 100px;
+}
+
+.langSelect:focus {
+    outline: none;
+}
+
+/* Hide the Google Translate top bar that shifts the page down */
+:global(.goog-te-banner-frame) {
+    display: none !important;
+}
+
+/* Hide the top-level Google Translate bar ("Translated into...") */
+:global(body > .skiptranslate) {
+    display: none !important;
+}
+
+:global(body) {
+    top: 0 !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .topBar {
+        padding: 0 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .searchContainer {
+        margin: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .searchInput {
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        font-size: 0.85rem;
+    }
+
+    .searchIcon {
+        left: 0.75rem;
+        width: 16px;
+        height: 16px;
+    }
+
+    .username,
+    .createBtnText {
+        display: none;
+    }
+
+    .actions {
+        gap: 0.25rem;
+    }
+
+    .profileContainer {
+        display: none;
+    }
+
+    .translateWrapper {
+        padding: 0.4rem;
+        border-radius: 50%;
+        gap: 0;
+        width: 34px;
+        height: 34px;
+        justify-content: center;
+    }
+
+    .langSelect {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+
+    /* Hide text from logo, just show icon if we had one.
+       Since their logo uses an SVG pseudo-element and 'AgroW' text, 
+       we can't easily hide just the text without modifying the JSX.
+       Instead, we'll just reduce the logo text size. */
+    .logoArea {
+        font-size: 1rem;
+        gap: 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoText {
+        display: none;
+    }
+
+    .iconBtn[title="Messages"],
+    .iconBtn[title="Notifications"] {
+        display: none;
+    }
+
+    .createBtn {
+        padding: 0.5rem;
+    }
+
+    .createBtn svg {
+        margin: 0;
+    }
+}

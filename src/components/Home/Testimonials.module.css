@@ -1,0 +1,90 @@
+.section {
+    padding: 5rem 1rem;
+    background-color: var(--color-bg);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: #388E3C;
+    /* Green */
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+}
+
+.quoteIcon {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-family: serif;
+    line-height: 1;
+}
+
+.quote {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 1.5rem 0 2rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.location {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 2px 0 0 0;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
