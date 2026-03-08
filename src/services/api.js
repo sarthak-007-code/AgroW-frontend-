@@ -1,7 +1,6 @@
 // src/services/api.js
-
-const BASE_URL = '/api';
-
+import { configDotenv } from "dotenv";
+const BASE_URL = process.env.VITE_API_URI;
 const HEADERS = {
     'Content-Type': 'application/json'
 };
